@@ -1,8 +1,6 @@
 import com.jayway.jsonpath.JsonPath;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-import org.hamcrest.CoreMatchers;
-import org.hamcrest.Matchers;
 import org.testng.annotations.Test;
 import static org.hamcrest.Matchers.not;
 import static org.hamcrest.Matchers.hasItem;
@@ -11,11 +9,13 @@ import static org.hamcrest.Matchers.hasItems;
 
 // Static Imports
 import static io.restassured.RestAssured.*;
-import static io.restassured.matcher.RestAssuredMatchers.*;
 import static org.hamcrest.Matchers.*;
-public class DemoTest2 {
+public class DemoTest_QAcart1 {
     String BaseURL = "https://66ce22ab199b1d628687e033.mockapi.io/aoe2/";
     String endPoint = "Units";
+
+
+    /*--------------------------------Response Body--------------------------------*/
 
     @Test     // annotation to indicate that the upcoming method is an executable testcase
     public void verifyGetRequestBasic () {        // test case starts here (as a method)
