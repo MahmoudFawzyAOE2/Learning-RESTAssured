@@ -1,15 +1,9 @@
-import com.jayway.jsonpath.JsonPath;
-import io.restassured.http.ContentType;
+
 import io.restassured.http.Header;
 import io.restassured.http.Headers;
-import io.restassured.response.Response;
 import org.testng.annotations.Test;
 
 import java.util.HashMap;
-
-import static org.hamcrest.Matchers.not;
-import static org.hamcrest.Matchers.hasItem;
-import static org.hamcrest.Matchers.hasItems;
 
 
 // Static Imports
